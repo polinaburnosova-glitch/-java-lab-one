@@ -88,15 +88,15 @@ public class Main {
 //            System.out.println(b);
 //        }
 
-//        for (int i = 1; i <= 10; i++) {
-//            if (i % 2 == 0) {
-//                continue;
-//            }
-//            if (i > 7) {
-//                break;
-//            }
-//            System.out.println(i);
-//        }
+        public static void printResult(float[][] s1) {
+            for (int i = 0; i < s1.length; i++) {
+                for (int j = 0; j < s1[i].length; j++) {
+                    System.out.printf("%10.4f ", s1[i][j]); // вывод с 4 знаками после запятой
+                }
+                System.out.println();
+            }
+        }
+    }
 
 
 
