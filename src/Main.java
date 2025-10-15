@@ -2,23 +2,12 @@ import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
-//        byte a = 100;
-//        short b = 2000;
-//        int c = 1000000;
-//        long d = 100000000;
-//        float e = 10.22f;
-//        double f = 10.22;
-//        boolean g = true;
-//        boolean h = false;
-//        char i = 'i';
-//        System.out.println(a);
-//        int a = 1;
-//        int b = 5;
-//
-//        System.out.println(a == b);
-//        int example = 3;
-//        if (example > 5) {
-//            example +=10;
+        short[] s = new short[18];
+        for (short i = 3; i <= 20; i++) {
+            s[i-3] = i;
+        }
+//        for (short n : s) {
+//            System.out.println(n);
 //        }
 //        System.out.println(example);
 
