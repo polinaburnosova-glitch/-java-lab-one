@@ -9,47 +9,12 @@ public class Main {
 //        for (short n : s) {
 //            System.out.println(n);
 //        }
-//        System.out.println(example);
-
-//        int example = 15;
-//        if (example < 5) {
-//            example +=10;
-//        } else {
-//            example -= 10;
-//        }
-//        System.out.println(example);
-
-//        int example = 15;
-//        if (example < 5) {
-//            System.out.println("Теперь мы в блоке if");
-//            example+=10;
-//        } else if (example == 15) {
-//            System.out.println("Теперь мы в блоке else if");
-//            example-=10;
-//        } else {
-//            System.out.println("Теперь мы в блоке else");
-//        }
-//        int a = 2;
-//        switch (a) {
-//            case 1 -> System.out.println("1");
-//            default -> System.out.println("100");
-//        }
-//        int a = 2;
-//        String s = switch (a) {
-//            case 1 -> "One";
-//            default -> "Default";
-//        };
-//        System.out.println(s);
-
-//        тернарный оператор
-//        int age = 20;
-//        String info = age >= 18 ? "adult" : "teen";
-//        System.out.println(info);
-
-//        int a = 0;
-//        for (int i = 0; i < 5; i++) {
-//            System.out.println(a);
-//            a++;
+        float[] x = new float[10];
+        for (int i = 0; i < x.length; i++) {
+            x[i] = (float) Math.random() * 13 - 3f;
+        }
+//        for (float n : x) {
+//            System.out.println(n);
 //        }
 
 //        int a = 0;
