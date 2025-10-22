@@ -17,11 +17,9 @@ public class Main {
 //            System.out.println(n);
 //        }
 
-//        int a = 0;
-//        while (a < 5) {
-//            a++;
-//            System.out.println(a);
-//        }
+        int num1 = 18;
+        int num2 = 10;
+        float[][] s1 = new float[num1][num2];
 
 //        int[] array = new int[10];
 //        String[] strArray = new String[5];
