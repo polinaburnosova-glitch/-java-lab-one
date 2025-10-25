@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class Main {
     public static void main(String[] args) {
         short[] s = new short[18];
@@ -21,24 +19,21 @@ public class Main {
         int num2 = 10;
         float[][] s1 = new float[num1][num2];
 
-//        int[] array = new int[10];
-//        String[] strArray = new String[5];
-//        for (int number: array){
-//            System.out.println(number);
-//        }
-//        for (String str: strArray){
-//            System.out.println(str);
-//        }
+        for (int i = 0; i < num1; i++) {
+            for (int j = 0; j < num2; j++) {
+                s1[i][j] = element(s[i], x[j]);
+            }
+        }
+        printResult(s1);
+    }
+        public static float element(int s1, float x1) {
+            return (float) switch (s1) {
+            case 20 -> Math.cbrt(Math.pow((Math.sin(x1)), ((0.25f/x1)*(Math.pow(x1, (0.5f/x1)+0.75f)))));
+            case 3, 4, 6, 7, 10, 15, 17, 18, 19 -> Math.tan(Math.pow((0.25f/(0.25f-x1-2)), 3));
+            default -> Math.cbrt(Math.asin(Math.exp(Math.cbrt(-Math.pow(Math.sin(x1), 2)))));
+            };
+        }
 
-//        boolean a = false;
-//        int b = 0;
-//        while (a == false) {
-//            b++;
-//            if (b > 5) {
-//                a = true;
-//            }
-//            System.out.println(b);
-//        }
 
         public static void printResult(float[][] s1) {
             for (int i = 0; i < s1.length; i++) {
@@ -52,6 +47,3 @@ public class Main {
 
 
 
-
-    }
-}
